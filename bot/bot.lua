@@ -14,7 +14,7 @@ json = (loadfile "./libs/JSON.lua")()
 JSON = (loadfile "./libs/dkjson.lua")()
 serpent = (loadfile "./libs/serpent.lua")()
 if notredis then
-print('\27[31m🔖┇ مرحبا عزيزي \n🔖┇ { redis-server } السورس يحتاج الى ريدز  \n🔖┇ redis-server  لحل هذا المشكله افتح ترمنال جديد واكتب   \n🔖┇ TH3BOSS.sh وبعدها ارجع سوي رن لملف الـ  \n🔖┇ للاستفسار راسلني @TH3BOSS\27[39m')
+print('\27[31m🔖┇ مرحبا عزيزي \n🔖┇ { redis-server } السورس يحتاج الى ريدز  \n🔖┇ redis-server  لحل هذا المشكله افتح ترمنال جديد واكتب   \n🔖┇ TH3BOSS.sh وبعدها ارجع سوي رن لملف الـ  \n🔖┇ للاستفسار راسلني @aszxcuo\27[39m')
 return
 end
 
@@ -26,16 +26,16 @@ function save_config( )
 end
 
 function create_config( )
-	io.write('\n\27[1;33m 🔖┇ ادخل ايدي حسابك لتصبح مطور : \27[0;39;49m\n')
+	io.write('\n\27[1;33m 🔖┇ ادخل ايدي حسابك لتصبح مطور : 7964525393m\n')
 	local SUDO = tonumber(io.read())
 if not tostring(SUDO):match('%d+') then
     SUDO = 60809019
   end
-  	io.write('\n\27[1;33m 🔖┇  ارسل توكن البوت الان : \27[0;39;49m\n')
+  	io.write('\n\27[1;33m 🔖┇ 7985253501:AAG2144m7XAvkrIVKGmowu8830yMC8Rh4OY : ارسل توكن البوت الان :  m\n')
 	local token = io.read()
-	 	io.write('\n\27[1;33m    🔖┇ ادخل الان اسم البوت الذي تريده : \27[0;39;49m\n')
+	 	io.write('\n\27[1;33m    🔖┇ حاميك : ادخل الان اسم البوت الذي تريده : m\n')
 	local botname = io.read()
-	 	io.write('\n\27[1;33m 🔖┇ ادخل معرف المطور : \27[0;39;49m\n')
+	 	io.write('\n\27[1;33m 🔖┇ @vol127 : ادخل معرف المطور : m\n')
 	local sudouser = io.read()
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
@@ -51,8 +51,8 @@ if not tostring(SUDO):match('%d+') then
     sudo_users = {60809019, SUDO},--Sudo users
     master_id = SUDO, 
     token_bot = token, 
-    botname = (botname or "الزعيم"), 
-    sudouser = (sudouser or "@TH3BOSS"), 
+    botname = (botname or "دمار"), 
+    sudouser = (sudouser or "@vol127"), 
     moderation = {data = './data/moderation.json'},
    info_text = [[🔖┇ ᗯEᒪᑕOᗰE ᗰY ᗪEᗩᖇ
 
@@ -87,7 +87,7 @@ function load_config( )
   end
   local config = loadfile ("./data/config.lua")()
   for v,user in pairs(config.sudo_users) do
-    print("🔖┇ ايدي المطور: " .. user)
+    print("🔖┇ 7964525393: " .. user)
   end
   return config
 end
@@ -106,7 +106,7 @@ elseif _config and not _config.token_botx then
 print("🔖┇ لم تقم بوضع التوكن يجب عليك وضع التوكن في ملف البوت ليعمل السورس")
 return
 else
-token_botx = "توكن"
+token_botx = "7985253501:AAG2144m7XAvkrIVKGmowu8830yMC8Rh4OY"
 master_idx = 60809019
 end
 
@@ -122,7 +122,7 @@ function bot_run()
 		bot = send_req(send_api.."/getMe")
 	end
 	bot = bot.result
-	local runlog = "🔖┇ معرف بوتك : @"..bot.username.."\n	🔖┇ يعمل ع سورس الزعيم توكن الاصدار V21\n🔖┇ تابع قناه السورس @lBOSSl"
+	local runlog = "🔖┇ معرف بوتك : @asxzuocvbot"..bot.username.."\n	🔖┇ يعمل ع سورس الزعيم توكن الاصدار V21\n🔖┇ تابع قناه السورس @aszxcuo"
 	print(runlog.."\n┇-----------------------------------")
 --	send_msg(sudo_id, runlog)
 	last_update = last_update or 0
